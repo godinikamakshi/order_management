@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: krenai_order_management
+  profiles:
+    active: dev
+
+server:
+  port: 8096
+
+springdoc:
+  swagger-ui:
+    enabled: true
