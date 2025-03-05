@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "d1b3fce6-282a-46fb-b575-84c34555a1c5",
+		"name": "krenai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35030923"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8096/api/orders/all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8096/api/orders/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders",
+						"all"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8096/api/orders/all' \\\r\n--header 'Content-Type: application/json'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8096/api/orders/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8096/api/orders/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders",
+						"2"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://localhost:8096/api/orders/2'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8096/api/orders/6",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Sathya\",\r\n    \"status\": \"COMPLETED\",\r\n    \"items\": [\r\n        {\r\n            \"productName\": \"Chairs\",\r\n            \"quantity\": 2,\r\n            \"price\": 200.75\r\n        },\r\n        {\r\n            \"productName\": \"Fans\",\r\n            \"quantity\": 1,\r\n            \"price\": 300.50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8096/api/orders/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders",
+						"6"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'http://localhost:8096/api/orders/6' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"customerName\": \"Sathya\",\r\n    \"status\": \"COMPLETED\",\r\n    \"items\": [\r\n        {\r\n            \"productName\": \"Chairs\",\r\n            \"quantity\": 2,\r\n            \"price\": 200.75\r\n        },\r\n        {\r\n            \"productName\": \"Fans\",\r\n            \"quantity\": 1,\r\n            \"price\": 300.50\r\n        }\r\n    ]\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8096/api/orders/5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8096/api/orders/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders",
+						"5"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8096/api/orders/5' \\\r\n--header 'Content-Type: application/json' \\\r\n--data ''"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8096/api/orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"Sathya\",\r\n    \"status\": \"NEW\",\r\n    \"items\": [\r\n        {\r\n            \"productName\": \"Choclate\",\r\n            \"quantity\": 10,\r\n            \"price\": 200.50\r\n        },\r\n        {\r\n            \"productName\": \"Bottle\",\r\n            \"quantity\": 2,\r\n            \"price\": 125.75\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8096/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8096/api/orders' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"customerName\": \"Sathya\",\r\n    \"status\": \"NEW\",\r\n    \"items\": [\r\n        {\r\n            \"productName\": \"Choclate\",\r\n            \"quantity\": 10,\r\n            \"price\": 200.50\r\n        },\r\n        {\r\n            \"productName\": \"Bottle\",\r\n            \"quantity\": 2,\r\n            \"price\": 125.75\r\n        }\r\n    ]\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8096/api/orders?status=COMPLETED",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8096/api/orders?status=COMPLETED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "COMPLETED"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8096/api/orders?status=COMPLETED' \\\r\n--header 'Content-Type: application/json'"
+			},
+			"response": []
+		}
+	]
+}
